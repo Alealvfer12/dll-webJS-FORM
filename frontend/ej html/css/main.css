@@ -1,0 +1,52 @@
+body{
+    background-color:lavender;
+    margin: 6mm
+}
+
+
+h1{
+    color: indianred;
+}
+h2{
+    color: indianred;
+}
+p{
+    font-size: small;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+a{
+    color: steelblue;
+    text-decoration: none;
+}
+ul li {
+    display: inline-block;
+    text-decoration: none;
+    color: coral;
+    font-style: normal;
+    font-size: 6mm;
+    padding: 2mm;
+  
+   
+    
+    
+}
+p{
+    color: steelblue;
+    font-style: unset;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: justify;
+    font-size: 4mm;
+   
+}
+ol{
+    color: steelblue;
+    font-style: unset;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: start;
+}
+img{
+    display:block;
+    margin:auto;
+    border-radius: 4mm;
+}
