@@ -1,3 +1,6 @@
 .mi_contenedor{
     margin: 100px;
 }
+.button{
+    display: none;
+}

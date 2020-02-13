@@ -17,7 +17,7 @@
                 <div class="card-body">
                     <h1 class="card-title">Gestión de estudiantes</h1>
                     <h6 class="card-subtitle mb-2 text-muted">Este formulario crea perfiles de estudiantes</h6>
-                    <form action="javascript:void(0)" onsubmit="obtenerValores()">
+                    <form action="javascript:void(0)" onsubmit="crearEstudiante()">
 
                         <div class="form-group">
                             <label for="identificacion">identificación</label>
@@ -47,7 +47,16 @@
                             <option value="Administración"> Administración </option>
                             </select>
                         </div>
-                        <button class="btn btn-primary" type="submit">Enviar</button>
+                        <input
+                        id ="btnEnviar"
+                        class="btn btn-primary" type="submit" values ="Enviar">
+
+                        <button  id="btnActualizar"type="button"
+                        onclick="actualizarEstudiante()"
+                        class="btn btn-primary" type="submit" style="display: none;"> Actualizar </button>
+
+
+
 
                     </form>
 
@@ -55,6 +64,23 @@
             </div>
 
         </div>
+
+        <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">Identificacion</th>
+                <th scope="col">Nombre</th>
+                <th scope="col">Edad</th>
+                <th scope="col">Carrera</th>
+                <th scope="col">Editar</th>
+                <th scope="col">Eliminar</th>
+               
+              </tr>
+            </thead>
+            <tbody id="listaEstudiantes">
+                
+            </tbody>
+          </table>
 
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
